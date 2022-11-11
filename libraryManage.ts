@@ -13,6 +13,14 @@ export class LibraryManage {
         }
     }
 
+    static deleteLibrary(nCode: number): void {
+        for (let i = 0; i < LibraryManage.listEmployee.length; i++) {
+            if (LibraryManage.listEmployee[i].nCode === nCode) {
+                LibraryManage.listEmployee.splice(i, 1);
+            }
+        }
+    }
+
     static editLibrary(nCode: number, employeeEdit: Library): void {
         for (let i = 0; i < LibraryManage.listEmployee.length; i++) {
             if (LibraryManage.listEmployee[i].nCode === nCode) {

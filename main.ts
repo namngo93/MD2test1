@@ -10,9 +10,9 @@ LibraryManage.add(l1);
 LibraryManage.add(m1);
 LibraryManage.add(n1);
 LibraryManage.display();
-// EmployeeManager.deleteEmployee(1);
-// console.log('--------Sau khi xóa-------')
-// EmployeeManager.display();
+LibraryManage.deleteLibrary(1);
+console.log('--------Sau khi xóa-------')
+LibraryManage.display();
 
 let dai: Library = new Library(3, 'Xuất Bản Thiếu Niên', 100 );
 LibraryManage.add(m1);
